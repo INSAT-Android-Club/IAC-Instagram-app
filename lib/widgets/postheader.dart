@@ -14,7 +14,7 @@ class Postheader extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
           CircleAvatar(
-            radius: 30,
+            radius: 25,
             backgroundImage: AssetImage('Assets/Pictures/Ruffles.png'),
           ),
           SizedBox(
@@ -23,14 +23,14 @@ class Postheader extends StatelessWidget {
           Text(
             'Ruffles',
             style: TextStyle(
-                //in the textstyles i follow what was written in the figma file as well as all the padding and size box values
+                //in the textstyles I follow what was written in the figma file as well as all the padding and size box values
                 color: Colors.black,
                 fontStyle: FontStyle.normal,
                 fontFamily: 'SF',
                 fontSize: 12,
                 fontWeight: FontWeight.w700),
           ),
-          // i used spacer to push my next widget to the end of the row
+          // I used spacer to push my next widget to the end of the row
           Spacer(),
           Image.asset('Assets/Icons/more.png'),
           SizedBox(

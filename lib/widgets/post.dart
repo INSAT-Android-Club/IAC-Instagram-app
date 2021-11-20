@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:workshop4/custom%20widgets/comments.dart';
-import 'package:workshop4/custom%20widgets/postheader.dart';
+import 'package:workshop4/widgets/comments.dart';
+import 'package:workshop4/widgets/postheader.dart';
 
 class Post extends StatelessWidget {
   const Post({Key? key}) : super(key: key);

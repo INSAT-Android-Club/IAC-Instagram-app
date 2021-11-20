@@ -2,8 +2,8 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:workshop4/custom%20widgets/post.dart';
-import 'package:workshop4/custom%20widgets/story.dart';
+import 'package:workshop4/widgets/post.dart';
+import 'package:workshop4/widgets/story.dart';
 
 class Feed extends StatelessWidget {
   const Feed({Key? key}) : super(key: key);

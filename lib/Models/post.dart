@@ -1,5 +1,7 @@
-import 'package:insta/Models/comment.dart';
-import 'package:insta/Models/user.dart';
+
+
+import 'package:workshop4/Models/comment.dart';
+import 'package:workshop4/Models/user.dart';
 
 class Post {
   late User user;
