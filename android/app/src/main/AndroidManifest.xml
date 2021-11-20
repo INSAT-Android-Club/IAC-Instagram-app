@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.insta">
+    package="com.example.workshop4">
    <application
-        android:label="insta"
+        android:label="workshop4"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
