@@ -45,7 +45,7 @@ class Comments extends StatelessWidget {
             ),
             icon: CircleAvatar(
                 radius: 14,
-                backgroundImage: AssetImage('Assets/Pictures/Ruffles.png'))),
+                backgroundImage: AssetImage('assets/pictures/Ruffles.png'))),
       ),
     );
   }

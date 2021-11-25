@@ -15,14 +15,14 @@ class Feed extends StatelessWidget {
       backgroundColor: Colors.white,
       appBar: AppBar(
         backgroundColor: Colors.white,
-        title: Image.asset('Assets/Pictures/IG logo.png'),
+        title: Image.asset('assets/pictures/IG logo.png'),
         elevation: 0,
         actions: [
           Image.asset(
-            'Assets/Icons/add.png',
+            'assets/icons/add.png',
           ),
-          Image.asset('Assets/Icons/heart.png'),
-          Image.asset('Assets/Icons/messenger.png'),
+          Image.asset('assets/icons/heart.png'),
+          Image.asset('assets/icons/messenger.png'),
         ],
       ),
       // i used a list view so even if the content of the app is bigger than the height of the device
@@ -43,28 +43,28 @@ class Feed extends StatelessWidget {
                   // my code and that leads to redundant code (that means basically copy pasted code which
                   // makes ur code less readable and so long for no reason)
                   StoryWidget(
-                    imageURL: 'Assets/Pictures/Ruffles.png',
+                    imageURL: 'assets/pictures/Ruffles.png',
                     display_text: 'Your Story',
                   ),
                   SizedBox(
                     width: 15,
                   ),
                   StoryWidget(
-                    imageURL: 'Assets/Pictures/bambi.png',
+                    imageURL: 'assets/pictures/bambi.png',
                     display_text: 'HypeSun_98',
                   ),
                   SizedBox(
                     width: 15,
                   ),
                   StoryWidget(
-                    imageURL: 'Assets/Pictures/daniel.png',
+                    imageURL: 'assets/pictures/daniel.png',
                     display_text: 'KarolBary',
                   ),
                   SizedBox(
                     width: 15,
                   ),
                   StoryWidget(
-                    imageURL: 'Assets/Pictures/jose.png',
+                    imageURL: 'assets/pictures/jose.png',
                     display_text: 'Waggles',
                   ),
                 ],

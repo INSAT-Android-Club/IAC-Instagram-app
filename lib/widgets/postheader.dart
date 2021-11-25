@@ -15,7 +15,7 @@ class Postheader extends StatelessWidget {
         children: [
           CircleAvatar(
             radius: 25,
-            backgroundImage: AssetImage('Assets/Pictures/Ruffles.png'),
+            backgroundImage: AssetImage('assets/pictures/Ruffles.png'),
           ),
           SizedBox(
             width: 9,
@@ -32,7 +32,7 @@ class Postheader extends StatelessWidget {
           ),
           // I used spacer to push my next widget to the end of the row
           Spacer(),
-          Image.asset('Assets/Icons/more.png'),
+          Image.asset('assets/icons/more.png'),
           SizedBox(
             width: 11,
           )

@@ -28,8 +28,9 @@ class _HomepageState extends State<Homepage> {
         // on the design of the feed page for now (and a bit on the navigationbat)
         controller: controller,
         onPageChanged: (i) {
-          index = i;
-          setState(() {});
+          setState(() {
+            index = i;
+          });
         },
         children: [
           const Feed(),
@@ -48,17 +49,17 @@ class _HomepageState extends State<Homepage> {
         },
         items: [
           BottomNavigationBarItem(
-              icon: Image.asset('Assets/Icons/Home.png'), label: 'home'),
+              icon: Image.asset('assets/icons/Home.png'), label: 'home'),
           BottomNavigationBarItem(
-              icon: Image.asset('Assets/Icons/Search.png'), label: 'search'),
+              icon: Image.asset('assets/icons/Search.png'), label: 'search'),
           BottomNavigationBarItem(
-              icon: Image.asset('Assets/Icons/Reels.png'), label: 'video'),
+              icon: Image.asset('assets/icons/Reels.png'), label: 'video'),
           BottomNavigationBarItem(
-              icon: Image.asset('Assets/Icons/Shop.png'), label: 'shopping'),
+              icon: Image.asset('assets/icons/Shop.png'), label: 'shopping'),
           BottomNavigationBarItem(
               icon: CircleAvatar(
                   radius: 15,
-                  backgroundImage: AssetImage('Assets/Pictures/Ruffles.png')),
+                  backgroundImage: AssetImage('assets/pictures/Ruffles.png')),
               label: 'shopping'),
         ],
       ),

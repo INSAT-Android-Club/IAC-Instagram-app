@@ -4,8 +4,15 @@ import 'package:flutter/widgets.dart';
 import 'package:workshop4/widgets/comments.dart';
 import 'package:workshop4/widgets/postheader.dart';
 
-class Post extends StatelessWidget {
-  const Post({Key? key}) : super(key: key);
+class Post extends StatefulWidget {
+  Post({Key? key}) : super(key: key);
+
+  @override
+  _PostState createState() => _PostState();
+}
+
+class _PostState extends State<Post> {
+  bool isLiked = false;
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +24,7 @@ class Post extends StatelessWidget {
       children: [
         Postheader(),
         Image.asset(
-          'Assets/Pictures/morgan.png',
+          'assets/pictures/morgan.png',
           width: size.width,
           fit: BoxFit.fill,
         ),
@@ -31,15 +38,39 @@ class Post extends StatelessWidget {
             SizedBox(
               width: 13,
             ),
-            Image.asset('Assets/Icons/heart.png'),
+
+            GestureDetector(
+                onTap: () {
+                  /*    setState(() {
+                    isLiked = !isLiked;
+                  });
+                  print(isLiked); */
+                  Navigator.pushNamed(context, '/profile');
+                },
+                child: isLiked
+                    ? Image.asset('assets/icons/red-heart-1.png',
+                        width: 25, height: 25)
+                    : Image.asset('assets/icons/heart.png')),
+/* 
+
+if (condition)
+ dosomething();
+ else 
+ desomethingesle();
+
+
+ condition ? dosomething() : desomethingesle() ;
+
+ */
             SizedBox(
               width: 19,
             ),
-            Icon(CupertinoIcons.bubble_left),
+            //Icon(CupertinoIcons.bubble_left),
+            Image.asset('assets/icons/comment.png'),
             SizedBox(
               width: 19,
             ),
-            Image.asset('Assets/Icons/share.png'),
+            Image.asset('assets/icons/share.png'),
             SizedBox(
               width: 54,
             ),
@@ -62,7 +93,7 @@ class Post extends StatelessWidget {
                     BoxDecoration(shape: BoxShape.circle, color: Colors.grey),
               ),
             Spacer(),
-            Image.asset('Assets/Icons/bookmark.png'),
+            Image.asset('assets/icons/bookmark.png'),
             SizedBox(
               width: 12,
             ),
@@ -119,6 +150,7 @@ class Post extends StatelessWidget {
           ),
         ),
         Comments(),
+        Comments()
       ],
     );
   }
